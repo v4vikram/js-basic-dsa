@@ -1,1 +1,1 @@
-import "./topics/string.js"
+import "./topics/string/string.js"
