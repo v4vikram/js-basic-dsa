@@ -35,4 +35,28 @@ function countVowels(str) {
     }
     return count
 }
-console.log(countVowels("vikramaee"))
+// console.log(countVowels("vikramaee"))
+
+
+function reverseEachChar(str) {
+    let newstr = "";
+    let word = "";
+
+    for (let i = 0; i <= str.length; i++) {
+
+        if (str[i] !== " " && str[i]) {
+            word += str[i];
+        } else {
+
+            for (let j = word.length - 1; j >= 0; j--) {
+                newstr += word[j]
+                // console.log(word[j]);
+            }
+            word = "";
+            newstr += " "
+        }
+    }
+    console.log(newstr)
+
+}
+console.log(reverseEachChar("hello vikram how are you"))
